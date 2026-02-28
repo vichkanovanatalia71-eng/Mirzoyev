@@ -1,0 +1,194 @@
+/* =============================================
+   CONTACTS PAGE
+   ============================================= */
+
+.contacts-section {
+  background: var(--color-bg);
+}
+
+.contacts__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+}
+
+/* === Contact Info === */
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.contacts__item {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.contacts__item-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-primary);
+}
+
+.contacts__item-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contacts__item-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  margin-bottom: var(--space-1);
+}
+
+.contacts__item-value {
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+}
+
+.contacts__item-value a {
+  color: var(--color-white);
+  transition: color var(--transition-fast);
+}
+
+.contacts__item-value a:hover {
+  color: var(--color-primary);
+}
+
+/* === Working Hours === */
+.contacts__hours {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+}
+
+.contacts__hours-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+}
+
+.contacts__hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+}
+
+.contacts__hours-row:last-child {
+  border-bottom: none;
+}
+
+.contacts__hours-day {
+  color: var(--color-text-muted);
+}
+
+.contacts__hours-time {
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+}
+
+/* === Map === */
+.contacts__map {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  height: 100%;
+  min-height: 400px;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(0.8) brightness(0.7) contrast(1.2);
+}
+
+/* === Contact Form === */
+.contacts__form-section {
+  margin-top: var(--space-16);
+}
+
+.contacts__form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contacts__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+/* === How to Find Us === */
+.contacts__directions {
+  margin-top: var(--space-16);
+  text-align: center;
+}
+
+.contacts__directions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.contacts__direction-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.contacts__direction-card svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.contacts__direction-card h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-2);
+}
+
+.contacts__direction-card p {
+  font-size: var(--font-size-sm);
+  max-width: none;
+}
+
+@media (max-width: 1023px) {
+  .contacts__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__directions-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--space-8);
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts__form-row {
+    grid-template-columns: 1fr;
+  }
+}

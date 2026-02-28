@@ -1,0 +1,104 @@
+:root {
+  /* === Colors — Dark Premium Dental === */
+  --color-bg: #06090F;
+  --color-bg-alt: #0C1117;
+  --color-surface: #111820;
+  --color-surface-hover: #182030;
+  --color-primary: #4FC3F7;
+  --color-primary-dark: #1B6B93;
+  --color-primary-rgb: 79, 195, 247;
+  --color-accent: #80DEEA;
+  --color-glow: rgba(79, 195, 247, 0.25);
+  --color-glow-strong: rgba(79, 195, 247, 0.5);
+  --color-text: #E8EDF2;
+  --color-text-muted: #7B8CA3;
+  --color-text-dim: #4A5568;
+  --color-white: #FFFFFF;
+  --color-border: rgba(79, 195, 247, 0.1);
+  --color-border-hover: rgba(79, 195, 247, 0.25);
+  --color-success: #66BB6A;
+  --color-error: #EF5350;
+  --color-overlay: rgba(6, 9, 15, 0.85);
+
+  /* === Typography === */
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-6xl: 4.5rem;
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+
+  /* === Spacing === */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-section: clamp(4rem, 8vw, 8rem);
+
+  /* === Layout === */
+  --container-max: 1280px;
+  --container-narrow: 960px;
+  --container-wide: 1440px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+  --header-height: 80px;
+
+  /* === Border Radius === */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* === Shadows & Glows === */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px var(--color-glow);
+  --shadow-glow-strong: 0 0 60px var(--color-glow-strong);
+  --shadow-glow-text: 0 0 40px rgba(79, 195, 247, 0.15);
+
+  /* === Transitions === */
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast: 0.15s var(--ease-out);
+  --transition-base: 0.3s var(--ease-in-out);
+  --transition-slow: 0.6s var(--ease-in-out);
+  --transition-slower: 1s var(--ease-in-out);
+
+  /* === Z-Index Scale === */
+  --z-base: 1;
+  --z-above: 10;
+  --z-header: 100;
+  --z-modal: 200;
+  --z-cursor: 300;
+  --z-overlay: 150;
+}

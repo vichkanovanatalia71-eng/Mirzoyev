@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porcelain Veneers — Dr. Mirzoyev Dental Clinic</title>
+  <meta name="description" content="Ultra-thin porcelain veneers to transform the shape, color, and alignment of your smile at Dr. Mirzoyev Dental Clinic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
+        <span class="header__logo-text">Dr. <span>Mirzoyev</span></span>
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
+          <li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li>
+          <li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
+          <button class="lang-switcher__btn" data-lang="ua">UA</button>
+        </div>
+        <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
+      </div>
+      <button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="/#services" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
+      <li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li>
+      <li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li>
+      <li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li>
+    </ul>
+    <div class="lang-switcher" id="langSwitcherMobile">
+      <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
+      <button class="lang-switcher__btn" data-lang="ua">UA</button>
+    </div>
+    <a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a>
+  </div>
+
+  <main>
+    <section class="service-page__hero">
+      <div class="container">
+        <span class="section-label" data-i18n="serviceVeneers.label">Cosmetic Dentistry</span>
+        <h1 class="section-title" data-i18n="serviceVeneers.title">Porcelain Veneers</h1>
+        <p class="section-subtitle mx-auto" data-i18n="serviceVeneers.subtitle">Ultra-thin porcelain shells custom-crafted to transform the shape, color, and alignment of your teeth for a flawless smile.</p>
+      </div>
+    </section>
+
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail__grid" style="display:grid;grid-template-columns:2fr 1fr;gap:3rem;align-items:start;">
+          <div class="service-detail__main">
+            <div class="service-detail__section">
+              <h2 data-i18n="serviceVeneers.whatTitle">What are Porcelain Veneers?</h2>
+              <p data-i18n="serviceVeneers.whatDesc">Porcelain veneers are wafer-thin, custom-made shells of tooth-colored porcelain that are bonded to the front surface of your teeth. They are an ideal solution for correcting chips, cracks, gaps, discoloration, and misalignment, providing you with a natural-looking, radiant smile that can last for decades.</p>
+            </div>
+
+            <div class="service-detail__section">
+              <h2 data-i18n="serviceVeneers.procedureTitle">The Procedure</h2>
+              <div class="service-steps">
+                <div class="service-step">
+                  <div class="service-step__number">1</div>
+                  <div class="service-step__content">
+                    <h3 data-i18n="serviceVeneers.step1Title">Consultation</h3>
+                    <p data-i18n="serviceVeneers.step1Desc">Comprehensive smile assessment, discussion of your goals, and digital smile design to preview your new look.</p>
+                  </div>
+                </div>
+                <div class="service-step">
+                  <div class="service-step__number">2</div>
+                  <div class="service-step__content">
+                    <h3 data-i18n="serviceVeneers.step2Title">Preparation</h3>
+                    <p data-i18n="serviceVeneers.step2Desc">Minimal enamel removal (about 0.5mm) from the tooth surface to create space for the veneer.</p>
+                  </div>
+                </div>
+                <div class="service-step">
+                  <div class="service-step__number">3</div>
+                  <div class="service-step__content">
+                    <h3 data-i18n="serviceVeneers.step3Title">Impressions</h3>
+                    <p data-i18n="serviceVeneers.step3Desc">Precise digital or physical impressions taken and sent to our laboratory for custom veneer fabrication.</p>
+                  </div>
+                </div>
+                <div class="service-step">
+                  <div class="service-step__number">4</div>
+                  <div class="service-step__content">
+                    <h3 data-i18n="serviceVeneers.step4Title">Fitting</h3>
+                    <p data-i18n="serviceVeneers.step4Desc">Trial placement to check fit, color match, and shape. Adjustments made for perfect alignment and aesthetics.</p>
+                  </div>
+                </div>
+                <div class="service-step">
+                  <div class="service-step__number">5</div>
+                  <div class="service-step__content">
+                    <h3 data-i18n="serviceVeneers.step5Title">Bonding</h3>
+                    <p data-i18n="serviceVeneers.step5Desc">Permanent bonding of the porcelain veneers using special dental cement and light curing for a durable, lasting result.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-detail__section">
+              <h2 data-i18n="serviceVeneers.benefitsTitle">Benefits</h2>
+              <ul class="service-benefits">
+                <li data-i18n="serviceVeneers.benefit1">Natural, translucent appearance matching real teeth</li>
+                <li data-i18n="serviceVeneers.benefit2">Stain-resistant porcelain surface</li>
+                <li data-i18n="serviceVeneers.benefit3">Minimally invasive preparation process</li>
+                <li data-i18n="serviceVeneers.benefit4">Durable — can last 15-20 years with proper care</li>
+                <li data-i18n="serviceVeneers.benefit5">Corrects multiple cosmetic issues at once</li>
+                <li data-i18n="serviceVeneers.benefit6">Custom-designed for your unique facial features</li>
+              </ul>
+            </div>
+
+            <div class="service-detail__section">
+              <h2 data-i18n="serviceVeneers.faqTitle">Frequently Asked Questions</h2>
+              <div class="faq-accordion">
+                <div class="faq-item">
+                  <button class="faq-item__question" aria-expanded="false">
+                    <span data-i18n="serviceVeneers.faq1Q">How long do porcelain veneers last?</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                  <div class="faq-item__answer">
+                    <p data-i18n="serviceVeneers.faq1A">With proper care, porcelain veneers can last 15-20 years or even longer. Regular dental check-ups, good oral hygiene, and avoiding habits like nail biting or chewing ice can help maximize their lifespan.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-item__question" aria-expanded="false">
+                    <span data-i18n="serviceVeneers.faq2Q">Do veneers look natural?</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                  <div class="faq-item__answer">
+                    <p data-i18n="serviceVeneers.faq2A">Absolutely. Modern porcelain veneers are designed to mimic the natural translucency and color variations of real teeth. Each veneer is custom-crafted to match your facial features and desired aesthetics, making them virtually indistinguishable from natural teeth.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-item__question" aria-expanded="false">
+                    <span data-i18n="serviceVeneers.faq3Q">Is the procedure reversible?</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                  <div class="faq-item__answer">
+                    <p data-i18n="serviceVeneers.faq3A">Traditional veneers require minimal enamel removal and are considered a permanent treatment. However, minimal-prep or no-prep veneers are available for some patients, which require little to no enamel alteration. We will discuss all options during your consultation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="service-detail__sidebar">
+            <div class="service-sidebar-card">
+              <div class="service-sidebar-card__price">
+                <span class="service-sidebar-card__price-label" data-i18n="serviceVeneers.priceLabel">Starting from</span>
+                <span class="service-sidebar-card__price-value" data-i18n="serviceVeneers.price">$800/tooth</span>
+              </div>
+              <div class="service-sidebar-card__info">
+                <div class="service-sidebar-card__info-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <div>
+                    <span class="service-sidebar-card__info-label" data-i18n="serviceVeneers.durationLabel">Duration</span>
+                    <span class="service-sidebar-card__info-value" data-i18n="serviceVeneers.duration">2-3 weeks</span>
+                  </div>
+                </div>
+              </div>
+              <a href="booking.html" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="serviceVeneers.bookBtn">Book Consultation</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-section__bg"><div class="cta-section__glow"></div></div>
+      <div class="container cta-section__content">
+        <h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2>
+        <p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today.</p>
+        <div class="cta-section__actions">
+          <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a>
+          <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">Call Us Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <canvas class="footer__particles-canvas" id="footerCanvas"></canvas>
+    <div class="container footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div>
+          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.services">Services</h4>
+          <div class="footer__links">
+            <a href="service-implantology.html" class="footer__link">Implantology</a>
+            <a href="service-whitening.html" class="footer__link">Whitening</a>
+            <a href="service-veneers.html" class="footer__link">Veneers</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer__links">
+            <a href="gallery.html" class="footer__link">Before &amp; After</a>
+            <a href="team.html" class="footer__link">Team</a>
+            <a href="booking.html" class="footer__link">Book</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4>
+          <div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar" id="mobileCta">
+    <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
+    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

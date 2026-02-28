@@ -1,0 +1,245 @@
+/* =============================================
+   GALLERY / BEFORE-AFTER SECTION
+   ============================================= */
+
+.gallery-section {
+  background: var(--color-bg-alt);
+}
+
+.gallery-section__header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+/* === Filter Tabs === */
+.gallery__filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-10);
+  flex-wrap: wrap;
+}
+
+.gallery__filter-btn {
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.gallery__filter-btn:hover,
+.gallery__filter-btn--active {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.08);
+}
+
+/* === Gallery Grid (Masonry-like) === */
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+/* === Gallery Item === */
+.gallery__item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4 / 3;
+  background: var(--color-surface);
+}
+
+.gallery__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.gallery__item:hover .gallery__item-img {
+  transform: scale(1.05);
+}
+
+/* Overlay on hover */
+.gallery__item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6, 9, 15, 0.9), transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-6);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.gallery__item:hover .gallery__item-overlay {
+  opacity: 1;
+}
+
+.gallery__item-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  margin-bottom: var(--space-1);
+}
+
+.gallery__item-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* === Before/After Slider === */
+.before-after {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  cursor: ew-resize;
+  background: var(--color-surface);
+}
+
+.before-after__3d-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.before-after__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.before-after__image--after {
+  clip-path: inset(0 0 0 50%);
+  transition: clip-path 0.05s linear;
+}
+
+/* Drag Handle */
+.before-after__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+  z-index: 5;
+  transform: translateX(-50%);
+}
+
+.before-after__handle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow-strong);
+  transition: transform var(--transition-fast);
+}
+
+.before-after:hover .before-after__handle-circle {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.before-after__handle-circle svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-bg);
+}
+
+/* Labels */
+.before-after__label {
+  position: absolute;
+  bottom: var(--space-4);
+  z-index: 3;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  background: rgba(6, 9, 15, 0.8);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  backdrop-filter: blur(8px);
+}
+
+.before-after__label--before {
+  left: var(--space-4);
+}
+
+.before-after__label--after {
+  right: var(--space-4);
+}
+
+/* === Case Info (below slider) === */
+.before-after__info {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+  margin-top: var(--space-6);
+}
+
+.before-after__info-item {
+  text-align: center;
+}
+
+.before-after__info-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  margin-bottom: var(--space-1);
+}
+
+.before-after__info-value {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+
+/* === Disclaimer === */
+.gallery__disclaimer {
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-dim);
+  margin-top: var(--space-10);
+  font-style: italic;
+}
+
+/* === Responsive === */
+@media (max-width: 1023px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .before-after__info {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+}

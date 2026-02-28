@@ -1,0 +1,20 @@
+{
+  "name": "mirzoyev-dental",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

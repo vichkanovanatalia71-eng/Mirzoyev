@@ -1,0 +1,109 @@
+/* =============================================
+   BOOKING FORM
+   ============================================= */
+
+.booking-section {
+  background: var(--color-bg);
+}
+
+.booking-section__header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.booking-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.booking-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.booking-form__submit {
+  margin-top: var(--space-4);
+}
+
+/* === Quick Booking Modal === */
+.quick-booking {
+  text-align: center;
+}
+
+.quick-booking__title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-2);
+}
+
+.quick-booking__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-8);
+}
+
+.quick-booking__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* === Date/Time Picker Styling === */
+input[type="date"],
+input[type="time"] {
+  color-scheme: dark;
+}
+
+/* === Thank You Page === */
+.thankyou {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.thankyou__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-8);
+  border-radius: 50%;
+  background: rgba(var(--color-primary-rgb), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: successPulse 2s ease-in-out infinite;
+}
+
+.thankyou__icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-success);
+}
+
+@keyframes successPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(102, 187, 106, 0.3); }
+  50% { box-shadow: 0 0 0 20px rgba(102, 187, 106, 0); }
+}
+
+.thankyou__title {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.thankyou__message {
+  max-width: 500px;
+  margin: 0 auto var(--space-8);
+}
+
+@media (max-width: 767px) {
+  .booking-form__row {
+    grid-template-columns: 1fr;
+  }
+}

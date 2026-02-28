@@ -1,0 +1,98 @@
+/* =============================================
+   GLOBAL RESPONSIVE OVERRIDES
+   ============================================= */
+
+/* === Custom cursor: desktop only === */
+@media (pointer: fine) {
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: var(--z-cursor);
+    mix-blend-mode: screen;
+    transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-cursor--hover {
+    width: 50px;
+    height: 50px;
+    opacity: 0.15;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+/* === Reduce motion for accessibility === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero__scroll-indicator {
+    animation: none;
+  }
+
+  .btn-pulse {
+    animation: none;
+  }
+}
+
+/* === Tablet specific === */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --header-height: 72px;
+  }
+}
+
+/* === Mobile specific === */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 64px;
+    --container-padding: 1rem;
+  }
+
+  section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+/* === Print === */
+@media print {
+  .header,
+  .footer,
+  .mobile-cta-bar,
+  .scroll-progress,
+  .custom-cursor,
+  canvas {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}

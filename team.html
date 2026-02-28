@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team — Dr. Mirzoyev Dental Clinic</title>
+  <meta name="description" content="Meet our experienced team of dental professionals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="custom-cursor" id="customCursor"></div>
+  <header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="header__logo-text">Dr. <span>Mirzoyev</span></span></a><nav class="header__nav"><ul class="nav__list"><li><a href="/#services" class="nav__link">Services</a></li><li><a href="gallery.html" class="nav__link">Before & After</a></li><li><a href="/#trust" class="nav__link">About</a></li><li><a href="testimonials.html" class="nav__link">Reviews</a></li><li><a href="blog.html" class="nav__link">Blog</a></li><li><a href="contacts.html" class="nav__link">Contacts</a></li></ul></nav><div class="header__actions"><div class="lang-switcher" id="langSwitcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-sm">Book Appointment</a></div><button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
+  <div class="mobile-nav" id="mobileNav"><ul class="mobile-nav__list"><li><a href="/" class="mobile-nav__link">Home</a></li><li><a href="contacts.html" class="mobile-nav__link">Contacts</a></li></ul><div class="lang-switcher" id="langSwitcherMobile"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-lg">Book</a></div>
+
+  <main>
+    <section class="team-section" style="padding-top: calc(var(--header-height) + var(--space-16));">
+      <div class="container">
+        <div class="team-section__header">
+          <span class="section-label" data-i18n="team.title">Our Team</span>
+          <h1 class="section-title" data-i18n="team.title">Our Team</h1>
+          <p class="section-subtitle mx-auto" data-i18n="team.subtitle">Experienced professionals dedicated to your smile.</p>
+        </div>
+        <div class="team__grid">
+          <div class="team-card">
+            <div class="team-card__photo" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--color-surface),var(--color-bg-alt));"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="0.5" opacity="0.3"><circle cx="12" cy="8" r="5"/><path d="M3 21v-2a7 7 0 0114 0v2"/></svg></div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Dr. Mirzoyev</h3>
+              <div class="team-card__role">Lead Dentist</div>
+              <p class="team-card__bio">Cosmetic & Implant Dentistry Specialist with over 15 years of experience. Board certified, ADA member.</p>
+              <div class="team-card__specialties"><span class="team-card__specialty">Implants</span><span class="team-card__specialty">Veneers</span><span class="team-card__specialty">Cosmetic</span></div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__photo" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--color-surface),var(--color-bg-alt));"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="0.5" opacity="0.3"><circle cx="12" cy="8" r="5"/><path d="M3 21v-2a7 7 0 0114 0v2"/></svg></div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Dr. Kovalenko</h3>
+              <div class="team-card__role">Orthodontist</div>
+              <p class="team-card__bio">Specialist in clear aligners and braces with 10+ years of experience. Focus on minimally invasive orthodontic solutions.</p>
+              <div class="team-card__specialties"><span class="team-card__specialty">Orthodontics</span><span class="team-card__specialty">Aligners</span></div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__photo" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--color-surface),var(--color-bg-alt));"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="0.5" opacity="0.3"><circle cx="12" cy="8" r="5"/><path d="M3 21v-2a7 7 0 0114 0v2"/></svg></div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Dr. Bondarenko</h3>
+              <div class="team-card__role">Pediatric Dentist</div>
+              <p class="team-card__bio">Gentle, child-friendly approach with 8+ years dedicated to pediatric dentistry. Creating positive dental experiences for children.</p>
+              <div class="team-card__specialties"><span class="team-card__specialty">Pediatric</span><span class="team-card__specialty">Prevention</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section"><div class="cta-section__bg"><div class="cta-section__glow"></div></div><div class="container cta-section__content"><h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2><div class="cta-section__actions"><a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer__inner"><div class="footer__bottom"><span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span></div></div></footer>
+  <div class="mobile-cta-bar" id="mobileCta"><a href="booking.html" class="btn btn-primary btn-sm">Book</a><a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a></div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
