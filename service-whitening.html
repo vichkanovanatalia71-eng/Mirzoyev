@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teeth Whitening — Dr. Mirzoyev Dental Clinic</title>
-  <meta name="description" content="Professional teeth whitening for a brighter, more confident smile in just one visit at Dr. Mirzoyev Dental Clinic.">
+  <meta name="description" content="Professional teeth whitening for a brighter smile. Safe, effective in-office and take-home whitening solutions at Dr. Mirzoyev Dental Clinic.">
+  <meta name="theme-color" content="#06090F">
+
+  <meta property="og:title" content="Teeth Whitening — Dr. Mirzoyev Dental Clinic">
+  <meta property="og:description" content="Professional teeth whitening for a brighter, more confident smile in just one visit.">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,11 +25,11 @@
     <div class="header__inner">
       <a href="/" class="header__logo">
         <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
-        <span class="header__logo-text">Dr. <span>Mirzoyev</span></span>
+        <span class="header__logo-text" data-i18n="logo">Dr. <span>Mirzoyev</span></span>
       </a>
       <nav class="header__nav">
         <ul class="nav__list">
-          <li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="services.html" class="nav__link nav__link--active" data-i18n="nav.services">Services</a></li>
           <li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
           <li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li>
           <li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li>
@@ -44,7 +50,7 @@
 
   <div class="mobile-nav" id="mobileNav">
     <ul class="mobile-nav__list">
-      <li><a href="/#services" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
+      <li><a href="services.html" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
       <li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
       <li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li>
       <li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li>
@@ -61,9 +67,21 @@
   <main>
     <section class="service-page__hero">
       <div class="container">
+        <div class="service-page__breadcrumb">
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          <span data-i18n="services.whitening.title">Whitening</span>
+        </div>
         <span class="section-label" data-i18n="serviceWhitening.label">Cosmetic Dentistry</span>
         <h1 class="section-title" data-i18n="serviceWhitening.title">Teeth Whitening</h1>
-        <p class="section-subtitle mx-auto" data-i18n="serviceWhitening.subtitle">Professional teeth whitening for a brighter, more confident smile. Achieve results up to 8 shades whiter in just one visit.</p>
+        <p class="section-subtitle mx-auto" data-i18n="serviceWhitening.subtitle">Professional in-office whitening for a brighter, more confident smile in just one visit.</p>
+        <div style="display: flex; gap: var(--space-4); margin-top: var(--space-8); flex-wrap: wrap; justify-content: center;">
+          <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="serviceWhitening.bookBtn">Book Whitening Session</a>
+          <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Us Now
+          </a>
+        </div>
       </div>
     </section>
 
@@ -73,7 +91,7 @@
           <div class="service-detail__main">
             <div class="service-detail__section">
               <h2 data-i18n="serviceWhitening.whatTitle">What is Professional Teeth Whitening?</h2>
-              <p data-i18n="serviceWhitening.whatDesc">Professional teeth whitening is a safe, effective cosmetic procedure that uses advanced bleaching agents to remove deep stains and discoloration from your teeth. Unlike over-the-counter products, our in-office treatment delivers dramatic results in a single session under the careful supervision of our dental professionals.</p>
+              <p data-i18n="serviceWhitening.whatDesc">Professional teeth whitening is a safe, effective cosmetic procedure that uses clinical-grade bleaching agents to remove stains and discoloration from your teeth. Unlike over-the-counter products, in-office whitening delivers dramatic results in a single session, with careful monitoring to protect your gums and enamel.</p>
             </div>
 
             <div class="service-detail__section">
@@ -82,51 +100,57 @@
                 <div class="service-step">
                   <div class="service-step__number">1</div>
                   <div class="service-step__content">
-                    <h3 data-i18n="serviceWhitening.step1Title">Consultation</h3>
-                    <p data-i18n="serviceWhitening.step1Desc">Initial assessment of your teeth color, oral health check, and discussion of your desired shade and expectations.</p>
+                    <h3 data-i18n="serviceWhitening.step1Title">Consultation &amp; Shade Assessment</h3>
+                    <p data-i18n="serviceWhitening.step1Desc">Initial assessment of your teeth shade, oral health check, and discussion of expected results and any sensitivity concerns.</p>
                   </div>
                 </div>
                 <div class="service-step">
                   <div class="service-step__number">2</div>
                   <div class="service-step__content">
-                    <h3 data-i18n="serviceWhitening.step2Title">Cleaning</h3>
-                    <p data-i18n="serviceWhitening.step2Desc">Thorough professional cleaning to remove plaque and surface stains, ensuring even whitening results.</p>
+                    <h3 data-i18n="serviceWhitening.step2Title">Professional Cleaning</h3>
+                    <p data-i18n="serviceWhitening.step2Desc">Thorough professional cleaning to remove plaque and surface stains, ensuring the whitening gel works evenly across all teeth.</p>
                   </div>
                 </div>
                 <div class="service-step">
                   <div class="service-step__number">3</div>
                   <div class="service-step__content">
-                    <h3 data-i18n="serviceWhitening.step3Title">Whitening Application</h3>
-                    <p data-i18n="serviceWhitening.step3Desc">Professional-grade whitening gel is carefully applied to your teeth with gum protection in place.</p>
+                    <h3 data-i18n="serviceWhitening.step3Title">Whitening Gel Application</h3>
+                    <p data-i18n="serviceWhitening.step3Desc">Clinical-grade whitening gel is carefully applied to your teeth while your gums are protected with a barrier shield.</p>
                   </div>
                 </div>
                 <div class="service-step">
                   <div class="service-step__number">4</div>
                   <div class="service-step__content">
-                    <h3 data-i18n="serviceWhitening.step4Title">UV Activation</h3>
-                    <p data-i18n="serviceWhitening.step4Desc">Special UV light activates the whitening gel, accelerating the bleaching process for optimal results.</p>
+                    <h3 data-i18n="serviceWhitening.step4Title">Light Activation</h3>
+                    <p data-i18n="serviceWhitening.step4Desc">A special LED light activates the whitening gel, accelerating the bleaching process for faster and more effective results.</p>
                   </div>
                 </div>
                 <div class="service-step">
                   <div class="service-step__number">5</div>
                   <div class="service-step__content">
-                    <h3 data-i18n="serviceWhitening.step5Title">Results Check</h3>
-                    <p data-i18n="serviceWhitening.step5Desc">Final shade comparison, aftercare instructions, and tips for maintaining your bright new smile.</p>
+                    <h3 data-i18n="serviceWhitening.step5Title">Results &amp; Aftercare</h3>
+                    <p data-i18n="serviceWhitening.step5Desc">Final shade comparison to document your results. Post-treatment care instructions and tips for maintaining your bright smile.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="service-detail__section">
-              <h2 data-i18n="serviceWhitening.benefitsTitle">Benefits</h2>
-              <ul class="service-benefits">
-                <li data-i18n="serviceWhitening.benefit1">Immediate visible results — up to 8 shades whiter</li>
-                <li data-i18n="serviceWhitening.benefit2">Safe and professionally supervised procedure</li>
-                <li data-i18n="serviceWhitening.benefit3">Long-lasting results with proper maintenance</li>
-                <li data-i18n="serviceWhitening.benefit4">Boosts confidence and self-esteem</li>
-                <li data-i18n="serviceWhitening.benefit5">Non-invasive and painless treatment</li>
-                <li data-i18n="serviceWhitening.benefit6">Customized treatment for your specific needs</li>
-              </ul>
+              <h2 data-i18n="serviceWhitening.durationTitle">Treatment Details</h2>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-4);">
+                <div style="background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid var(--color-border); text-align: center;">
+                  <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary);" data-i18n="serviceWhitening.sessionTime">1-2h</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-2);" data-i18n="serviceWhitening.sessionLabel">Session Time</div>
+                </div>
+                <div style="background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid var(--color-border); text-align: center;">
+                  <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary);" data-i18n="serviceWhitening.shadesCount">8</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-2);" data-i18n="serviceWhitening.shadesLabel">Shades Brighter</div>
+                </div>
+                <div style="background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid var(--color-border); text-align: center;">
+                  <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary);" data-i18n="serviceWhitening.lastsTime">1-2y</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-2);" data-i18n="serviceWhitening.lastsLabel">Results Last</div>
+                </div>
+              </div>
             </div>
 
             <div class="service-detail__section">
@@ -138,16 +162,16 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                   </button>
                   <div class="faq-item__answer">
-                    <p data-i18n="serviceWhitening.faq1A">Results typically last 6-12 months depending on your diet and oral care habits. Avoiding staining foods and drinks like coffee, tea, and red wine can help extend the results. Touch-up treatments are available.</p>
+                    <p data-i18n="serviceWhitening.faq1A">Results typically last 6 months to 2 years depending on your diet, habits, and oral hygiene routine. Avoiding coffee, tea, red wine, and tobacco will help maintain your bright smile longer.</p>
                   </div>
                 </div>
                 <div class="faq-item">
                   <button class="faq-item__question" aria-expanded="false">
-                    <span data-i18n="serviceWhitening.faq2Q">Is teeth whitening safe for my enamel?</span>
+                    <span data-i18n="serviceWhitening.faq2Q">Is teeth whitening safe for enamel?</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                   </button>
                   <div class="faq-item__answer">
-                    <p data-i18n="serviceWhitening.faq2A">Yes, professional teeth whitening is completely safe for your enamel when performed by a qualified dentist. Our products are clinically tested and we monitor the entire process to ensure your teeth and gums are protected.</p>
+                    <p data-i18n="serviceWhitening.faq2A">Yes, professional teeth whitening is safe when performed by a qualified dentist. We use carefully formulated gels and monitor the entire process to protect your enamel and gums.</p>
                   </div>
                 </div>
                 <div class="faq-item">
@@ -156,7 +180,7 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                   </button>
                   <div class="faq-item__answer">
-                    <p data-i18n="serviceWhitening.faq3A">Some patients may experience temporary sensitivity for 24-48 hours after the procedure. We use desensitizing agents during treatment to minimize this, and can recommend toothpaste for sensitive teeth if needed.</p>
+                    <p data-i18n="serviceWhitening.faq3A">Some patients may experience mild, temporary sensitivity for 24-48 hours after treatment. We use desensitizing agents and modern techniques to minimize any discomfort.</p>
                   </div>
                 </div>
               </div>
@@ -178,7 +202,8 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="serviceWhitening.bookBtn">Book Consultation</a>
+              <a href="booking.html" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="serviceWhitening.bookBtn">Book Whitening Session</a>
+              <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" style="width:100%;margin-top:0.75rem;" data-i18n="serviceWhitening.callBtn">Call Us</a>
             </div>
           </aside>
         </div>
@@ -188,8 +213,9 @@
     <section class="cta-section">
       <div class="cta-section__bg"><div class="cta-section__glow"></div></div>
       <div class="container cta-section__content">
+        <span class="section-label" data-i18n="cta.label">Get Started</span>
         <h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2>
-        <p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today.</p>
+        <p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today. We'll create a personalized treatment plan just for you.</p>
         <div class="cta-section__actions">
           <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a>
           <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">Call Us Now</a>
@@ -203,40 +229,69 @@
     <div class="container footer__inner">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div>
-          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry.</p>
+          <div class="footer__brand-logo">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
+            <span class="footer__brand-name">Dr. <span>Mirzoyev</span></span>
+          </div>
+          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry. Modern technology, personalized care, exceptional results.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a>
+          </div>
         </div>
         <div>
           <h4 class="footer__col-title" data-i18n="footer.services">Services</h4>
           <div class="footer__links">
-            <a href="service-implantology.html" class="footer__link">Implantology</a>
-            <a href="service-whitening.html" class="footer__link">Whitening</a>
-            <a href="service-veneers.html" class="footer__link">Veneers</a>
+            <a href="service-implantology.html" class="footer__link" data-i18n="services.implant.title">Implantology</a>
+            <a href="service-whitening.html" class="footer__link" data-i18n="services.whitening.title">Whitening</a>
+            <a href="service-veneers.html" class="footer__link" data-i18n="services.veneers.title">Veneers</a>
+            <a href="service-pediatric.html" class="footer__link" data-i18n="services.pediatric.title">Pediatric Dentistry</a>
+            <a href="service-emergency.html" class="footer__link" data-i18n="services.emergency.title">Emergency Care</a>
           </div>
         </div>
         <div>
           <h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4>
           <div class="footer__links">
-            <a href="gallery.html" class="footer__link">Before &amp; After</a>
-            <a href="team.html" class="footer__link">Team</a>
-            <a href="booking.html" class="footer__link">Book</a>
+            <a href="gallery.html" class="footer__link" data-i18n="nav.gallery">Before &amp; After</a>
+            <a href="testimonials.html" class="footer__link" data-i18n="nav.reviews">Reviews</a>
+            <a href="team.html" class="footer__link" data-i18n="trust.viewTeam">Meet the Team</a>
+            <a href="blog.html" class="footer__link" data-i18n="nav.blog">Blog</a>
+            <a href="booking.html" class="footer__link" data-i18n="nav.book">Book Appointment</a>
           </div>
         </div>
         <div>
           <h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4>
-          <div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer.address">Kyiv, Ukraine</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@mirzoyev.dental">info@mirzoyev.dental</a>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span>
-        <div class="footer__bottom-links"><a href="#">Privacy Policy</a></div>
+        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <div class="mobile-cta-bar" id="mobileCta">
     <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a>
+    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm" data-i18n="cta.call">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call
+    </a>
   </div>
 
   <script type="module" src="/src/js/main.js"></script>

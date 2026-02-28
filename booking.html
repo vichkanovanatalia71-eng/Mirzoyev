@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Appointment — Dr. Mirzoyev Dental Clinic</title>
-  <meta name="description" content="Book your dental appointment online with Dr. Mirzoyev. Quick and easy scheduling.">
+  <title>Book Your Appointment — Dr. Mirzoyev Dental Clinic</title>
+  <meta name="description" content="Schedule your dental appointment online at Dr. Mirzoyev Dental Clinic. Quick and easy booking.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,68 +14,155 @@
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="custom-cursor" id="customCursor"></div>
-  <header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="header__logo-text">Dr. <span>Mirzoyev</span></span></a><nav class="header__nav"><ul class="nav__list"><li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before & After</a></li><li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li></ul></nav><div class="header__actions"><div class="lang-switcher" id="langSwitcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div></div><button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
-  <div class="mobile-nav" id="mobileNav"><ul class="mobile-nav__list"><li><a href="/#services" class="mobile-nav__link">Services</a></li><li><a href="gallery.html" class="mobile-nav__link">Before & After</a></li><li><a href="contacts.html" class="mobile-nav__link">Contacts</a></li></ul><div class="lang-switcher" id="langSwitcherMobile"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
+        <span class="header__logo-text">Dr. <span>Mirzoyev</span></span>
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
+          <li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li>
+          <li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li>
+          <li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
+          <button class="lang-switcher__btn" data-lang="ua">UA</button>
+        </div>
+        <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
+      </div>
+      <button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="/#services" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
+      <li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li>
+      <li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li>
+      <li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li>
+    </ul>
+    <div class="lang-switcher" id="langSwitcherMobile">
+      <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
+      <button class="lang-switcher__btn" data-lang="ua">UA</button>
+    </div>
+    <a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a>
+  </div>
 
   <main>
-    <section class="booking-section">
-      <div class="container" style="padding-top: calc(var(--header-height) + var(--space-16));">
-        <div class="booking-section__header">
-          <span class="section-label" data-i18n="nav.book">Book Appointment</span>
-          <h1 class="section-title" data-i18n="booking.title">Book Your Appointment</h1>
-          <p class="section-subtitle mx-auto" data-i18n="booking.subtitle">Choose a convenient time and we'll take care of the rest.</p>
-        </div>
+    <section class="service-page__hero">
+      <div class="container">
+        <span class="section-label" data-i18n="booking.label">Schedule a Visit</span>
+        <h1 class="section-title" data-i18n="booking.title">Book Your Appointment</h1>
+        <p class="section-subtitle mx-auto" data-i18n="booking.subtitle">Choose your preferred service, date, and time. We will confirm your appointment shortly.</p>
+      </div>
+    </section>
 
-        <form class="booking-form" id="bookingForm">
+    <section class="booking-section">
+      <div class="container" style="max-width:700px;">
+        <form id="bookingForm" style="display:flex;flex-direction:column;gap:1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2.5rem;">
+
           <div class="form-group">
-            <label class="form-label" data-i18n="booking.service">Select Service</label>
-            <select class="form-select" name="service" required>
-              <option value="">Choose a service...</option>
-              <option value="consultation">Consultation</option>
-              <option value="implantology">Implantology</option>
-              <option value="whitening">Whitening</option>
-              <option value="veneers">Veneers</option>
-              <option value="pediatric">Pediatric Dentistry</option>
-              <option value="emergency">Emergency Care</option>
+            <label for="bookingService" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.serviceLabel">Service</label>
+            <select id="bookingService" name="service" required style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;appearance:none;">
+              <option value="" disabled selected data-i18n="booking.serviceDefault">Choose Service</option>
+              <option value="implantology" data-i18n="booking.serviceImplant">Implantology</option>
+              <option value="whitening" data-i18n="booking.serviceWhitening">Whitening</option>
+              <option value="veneers" data-i18n="booking.serviceVeneers">Veneers</option>
+              <option value="pediatric" data-i18n="booking.servicePediatric">Pediatric</option>
+              <option value="emergency" data-i18n="booking.serviceEmergency">Emergency</option>
+              <option value="consultation" data-i18n="booking.serviceConsultation">Consultation</option>
             </select>
           </div>
-          <div class="booking-form__row">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
             <div class="form-group">
-              <label class="form-label" data-i18n="booking.date">Preferred Date</label>
-              <input type="date" class="form-input" name="date" required>
+              <label for="bookingDate" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.dateLabel">Preferred Date</label>
+              <input type="date" id="bookingDate" name="date" required style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;">
             </div>
             <div class="form-group">
-              <label class="form-label" data-i18n="booking.time">Preferred Time</label>
-              <input type="time" class="form-input" name="time" required>
-            </div>
-          </div>
-          <div class="booking-form__row">
-            <div class="form-group">
-              <label class="form-label" data-i18n="booking.name">Full Name</label>
-              <input type="text" class="form-input" name="name" placeholder="John Smith" data-i18n-placeholder="booking.name" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" data-i18n="booking.phone">Phone Number</label>
-              <input type="tel" class="form-input" name="phone" placeholder="+380 XX XXX XX XX" required>
+              <label for="bookingTime" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.timeLabel">Preferred Time</label>
+              <input type="time" id="bookingTime" name="time" required style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;">
             </div>
           </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+            <div class="form-group">
+              <label for="bookingName" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.nameLabel">Full Name</label>
+              <input type="text" id="bookingName" name="name" required style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;">
+            </div>
+            <div class="form-group">
+              <label for="bookingPhone" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.phoneLabel">Phone</label>
+              <input type="tel" id="bookingPhone" name="phone" required style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;">
+            </div>
+          </div>
+
           <div class="form-group">
-            <label class="form-label" data-i18n="booking.email">Email Address</label>
-            <input type="email" class="form-input" name="email" placeholder="your@email.com">
+            <label for="bookingEmail" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.emailLabel">Email</label>
+            <input type="email" id="bookingEmail" name="email" required style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;">
           </div>
+
           <div class="form-group">
-            <label class="form-label" data-i18n="booking.message">Additional Notes (optional)</label>
-            <textarea class="form-textarea" name="message" rows="4" placeholder="Any special requests or information..." data-i18n-placeholder="booking.message"></textarea>
+            <label for="bookingMessage" style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.5rem;display:block;" data-i18n="booking.messageLabel">Additional Message (Optional)</label>
+            <textarea id="bookingMessage" name="message" rows="4" style="width:100%;padding:0.875rem 1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:0.5rem;color:#fff;font-size:1rem;font-family:inherit;outline:none;resize:vertical;"></textarea>
           </div>
-          <div class="booking-form__submit">
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="booking.submit">Confirm Appointment</button>
-          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="booking.submitBtn">Book Appointment</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer__inner"><div class="footer__bottom"><span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span></div></div></footer>
+  <footer class="footer">
+    <canvas class="footer__particles-canvas" id="footerCanvas"></canvas>
+    <div class="container footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div>
+          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.services">Services</h4>
+          <div class="footer__links">
+            <a href="service-implantology.html" class="footer__link">Implantology</a>
+            <a href="service-whitening.html" class="footer__link">Whitening</a>
+            <a href="service-veneers.html" class="footer__link">Veneers</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <div class="footer__links">
+            <a href="gallery.html" class="footer__link">Before &amp; After</a>
+            <a href="team.html" class="footer__link">Team</a>
+            <a href="booking.html" class="footer__link">Book</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4>
+          <div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar" id="mobileCta">
+    <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
+    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a>
+  </div>
+
   <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
