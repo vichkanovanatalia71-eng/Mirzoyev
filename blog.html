@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog &amp; Tips — Dr. Mirzoyev Dental Clinic</title>
-  <meta name="description" content="Dental health tips, guides, and insights from Dr. Mirzoyev Dental Clinic.">
+  <title>Blog — Dr. Mirzoyev Dental Clinic</title>
+  <meta name="description" content="Dental health tips, treatment guides, and clinic news from Dr. Mirzoyev Dental Clinic.">
+  <meta name="theme-color" content="#06090F">
+  <meta property="og:title" content="Blog — Dr. Mirzoyev Dental Clinic">
+  <meta property="og:description" content="Dental health tips, treatment guides, and clinic news.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,197 +19,61 @@
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="custom-cursor" id="customCursor"></div>
 
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="/" class="header__logo">
-        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
-        <span class="header__logo-text">Dr. <span>Mirzoyev</span></span>
-      </a>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li>
-          <li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
-          <li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li>
-          <li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li>
-          <li><a href="blog.html" class="nav__link nav__link--active" data-i18n="nav.blog">Blog</a></li>
-          <li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li>
-        </ul>
-      </nav>
-      <div class="header__actions">
-        <div class="lang-switcher" id="langSwitcher">
-          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
-          <button class="lang-switcher__btn" data-lang="ua">UA</button>
-        </div>
-        <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-      </div>
-      <button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="header__logo-text" data-i18n="logo">Dr. <span>Mirzoyev</span></span></a><nav class="header__nav"><ul class="nav__list"><li><a href="services.html" class="nav__link" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li><li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="nav__link nav__link--active" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li></ul></nav><div class="header__actions"><div class="lang-switcher" id="langSwitcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a></div><button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
 
-  <div class="mobile-nav" id="mobileNav">
-    <ul class="mobile-nav__list">
-      <li><a href="/#services" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
-      <li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
-      <li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li>
-      <li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li>
-      <li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li>
-      <li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li>
-    </ul>
-    <div class="lang-switcher" id="langSwitcherMobile">
-      <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
-      <button class="lang-switcher__btn" data-lang="ua">UA</button>
-    </div>
-    <a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a>
-  </div>
+  <div class="mobile-nav" id="mobileNav"><ul class="mobile-nav__list"><li><a href="services.html" class="mobile-nav__link" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li><li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li></ul><div class="lang-switcher" id="langSwitcherMobile"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a></div>
 
   <main>
     <section class="service-page__hero">
       <div class="container">
-        <span class="section-label" data-i18n="blog.label">Knowledge Base</span>
-        <h1 class="section-title" data-i18n="blog.title">Blog &amp; Tips</h1>
-        <p class="section-subtitle mx-auto" data-i18n="blog.subtitle">Expert dental advice, care guides, and the latest insights to keep your smile healthy and bright.</p>
+        <span class="section-label" data-i18n="blogPage.label">Blog</span>
+        <h1 class="section-title" data-i18n="blogPage.title">Dental Health Insights</h1>
+        <p class="section-subtitle mx-auto" data-i18n="blogPage.subtitle">Expert tips, treatment guides, and the latest news from our clinic.</p>
       </div>
     </section>
 
-    <section class="blog-section">
+    <section class="blog-section" style="padding: var(--space-section) 0;">
       <div class="container">
-        <div class="blog-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
+        <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: var(--space-6);">
 
-          <article class="blog-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;overflow:hidden;">
-            <div class="blog-card__image" style="aspect-ratio:16/9;background:linear-gradient(135deg,#1a2332,#0d1520);"></div>
-            <div class="blog-card__content" style="padding:1.5rem;">
-              <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;">
-                <span style="background:rgba(79,195,247,0.1);color:#4FC3F7;padding:0.2rem 0.6rem;border-radius:2rem;font-size:0.75rem;" data-i18n="blog.cat1">Oral Hygiene</span>
-                <span style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Jan 15, 2024</span>
-              </div>
-              <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-i18n="blog.post1Title">10 Essential Oral Hygiene Tips for a Healthier Smile</h3>
-              <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.6;margin-bottom:1rem;" data-i18n="blog.post1Excerpt">Discover the daily habits that dental professionals recommend for maintaining optimal oral health and preventing common dental problems.</p>
-              <a href="blog-post.html" style="color:#4FC3F7;font-size:0.9rem;font-weight:500;text-decoration:none;" data-i18n="blog.readMore">Read More &rarr;</a>
-            </div>
-          </article>
+          <a href="blog-post.html" class="blog-card" style="background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); text-decoration: none; display: block; transition: var(--transition-base);">
+            <div style="height: 200px; background: linear-gradient(135deg, #0a1628, #16213e); display: flex; align-items: center; justify-content: center;"><span style="color: var(--color-text-dim); font-size: var(--font-size-sm);">Article Image</span></div>
+            <div style="padding: var(--space-6);"><span style="color: var(--color-primary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider);" data-i18n="blogPage.cat1">Implants</span><h3 style="color: var(--color-text); font-size: var(--font-size-lg); margin: var(--space-2) 0 var(--space-3);" data-i18n="blogPage.post1Title">Everything You Need to Know About Dental Implants</h3><p style="color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-relaxed);" data-i18n="blogPage.post1Excerpt">A comprehensive guide to dental implants: types, procedures, recovery, and what to expect during your treatment journey.</p><div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border);"><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post1Date">Jan 15, 2024</span><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post1Read">5 min read</span></div></div>
+          </a>
 
-          <article class="blog-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;overflow:hidden;">
-            <div class="blog-card__image" style="aspect-ratio:16/9;background:linear-gradient(135deg,#1a2332,#0d1520);"></div>
-            <div class="blog-card__content" style="padding:1.5rem;">
-              <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;">
-                <span style="background:rgba(79,195,247,0.1);color:#4FC3F7;padding:0.2rem 0.6rem;border-radius:2rem;font-size:0.75rem;" data-i18n="blog.cat2">Implants</span>
-                <span style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Feb 3, 2024</span>
-              </div>
-              <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-i18n="blog.post2Title">How to Maintain Your Dental Implants</h3>
-              <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.6;margin-bottom:1rem;" data-i18n="blog.post2Excerpt">Learn the best practices for caring for your dental implants to ensure they last a lifetime and stay looking their best.</p>
-              <a href="blog-post.html" style="color:#4FC3F7;font-size:0.9rem;font-weight:500;text-decoration:none;" data-i18n="blog.readMore">Read More &rarr;</a>
-            </div>
-          </article>
+          <a href="blog-post.html" class="blog-card" style="background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); text-decoration: none; display: block; transition: var(--transition-base);">
+            <div style="height: 200px; background: linear-gradient(135deg, #16213e, #0f3460); display: flex; align-items: center; justify-content: center;"><span style="color: var(--color-text-dim); font-size: var(--font-size-sm);">Article Image</span></div>
+            <div style="padding: var(--space-6);"><span style="color: var(--color-primary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider);" data-i18n="blogPage.cat2">Cosmetic</span><h3 style="color: var(--color-text); font-size: var(--font-size-lg); margin: var(--space-2) 0 var(--space-3);" data-i18n="blogPage.post2Title">Veneers vs. Crowns: Which Is Right for You?</h3><p style="color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-relaxed);" data-i18n="blogPage.post2Excerpt">Understanding the differences between veneers and crowns to make the best decision for your smile makeover.</p><div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border);"><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post2Date">Jan 8, 2024</span><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post2Read">4 min read</span></div></div>
+          </a>
 
-          <article class="blog-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;overflow:hidden;">
-            <div class="blog-card__image" style="aspect-ratio:16/9;background:linear-gradient(135deg,#1a2332,#0d1520);"></div>
-            <div class="blog-card__content" style="padding:1.5rem;">
-              <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;">
-                <span style="background:rgba(79,195,247,0.1);color:#4FC3F7;padding:0.2rem 0.6rem;border-radius:2rem;font-size:0.75rem;" data-i18n="blog.cat3">Whitening</span>
-                <span style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Mar 12, 2024</span>
-              </div>
-              <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-i18n="blog.post3Title">Teeth Whitening: Facts vs. Myths</h3>
-              <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.6;margin-bottom:1rem;" data-i18n="blog.post3Excerpt">Separate fact from fiction when it comes to teeth whitening. We debunk common myths and share what actually works.</p>
-              <a href="blog-post.html" style="color:#4FC3F7;font-size:0.9rem;font-weight:500;text-decoration:none;" data-i18n="blog.readMore">Read More &rarr;</a>
-            </div>
-          </article>
+          <a href="blog-post.html" class="blog-card" style="background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); text-decoration: none; display: block; transition: var(--transition-base);">
+            <div style="height: 200px; background: linear-gradient(135deg, #1a1a2e, #0a1628); display: flex; align-items: center; justify-content: center;"><span style="color: var(--color-text-dim); font-size: var(--font-size-sm);">Article Image</span></div>
+            <div style="padding: var(--space-6);"><span style="color: var(--color-primary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider);" data-i18n="blogPage.cat3">Whitening</span><h3 style="color: var(--color-text); font-size: var(--font-size-lg); margin: var(--space-2) 0 var(--space-3);" data-i18n="blogPage.post3Title">How to Maintain Your Whitening Results</h3><p style="color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-relaxed);" data-i18n="blogPage.post3Excerpt">Tips and tricks to keep your smile bright after professional whitening treatment.</p><div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border);"><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post3Date">Dec 20, 2023</span><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post3Read">3 min read</span></div></div>
+          </a>
 
-          <article class="blog-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;overflow:hidden;">
-            <div class="blog-card__image" style="aspect-ratio:16/9;background:linear-gradient(135deg,#1a2332,#0d1520);"></div>
-            <div class="blog-card__content" style="padding:1.5rem;">
-              <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;">
-                <span style="background:rgba(79,195,247,0.1);color:#4FC3F7;padding:0.2rem 0.6rem;border-radius:2rem;font-size:0.75rem;" data-i18n="blog.cat4">Pediatric</span>
-                <span style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Apr 8, 2024</span>
-              </div>
-              <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-i18n="blog.post4Title">A Parent's Guide to Children's Dental Health</h3>
-              <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.6;margin-bottom:1rem;" data-i18n="blog.post4Excerpt">Everything parents need to know about their children's dental development, from first teeth to teenage years.</p>
-              <a href="blog-post.html" style="color:#4FC3F7;font-size:0.9rem;font-weight:500;text-decoration:none;" data-i18n="blog.readMore">Read More &rarr;</a>
-            </div>
-          </article>
+          <a href="blog-post.html" class="blog-card" style="background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); text-decoration: none; display: block; transition: var(--transition-base);">
+            <div style="height: 200px; background: linear-gradient(135deg, #0f3460, #1a1a2e); display: flex; align-items: center; justify-content: center;"><span style="color: var(--color-text-dim); font-size: var(--font-size-sm);">Article Image</span></div>
+            <div style="padding: var(--space-6);"><span style="color: var(--color-primary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider);" data-i18n="blogPage.cat4">Pediatric</span><h3 style="color: var(--color-text); font-size: var(--font-size-lg); margin: var(--space-2) 0 var(--space-3);" data-i18n="blogPage.post4Title">Your Child's First Dental Visit: A Parent's Guide</h3><p style="color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-relaxed);" data-i18n="blogPage.post4Excerpt">How to prepare your child for their first dental visit and create a positive experience.</p><div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border);"><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post4Date">Dec 12, 2023</span><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post4Read">4 min read</span></div></div>
+          </a>
 
-          <article class="blog-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;overflow:hidden;">
-            <div class="blog-card__image" style="aspect-ratio:16/9;background:linear-gradient(135deg,#1a2332,#0d1520);"></div>
-            <div class="blog-card__content" style="padding:1.5rem;">
-              <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;">
-                <span style="background:rgba(79,195,247,0.1);color:#4FC3F7;padding:0.2rem 0.6rem;border-radius:2rem;font-size:0.75rem;" data-i18n="blog.cat5">Emergency</span>
-                <span style="color:rgba(255,255,255,0.5);font-size:0.8rem;">May 20, 2024</span>
-              </div>
-              <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-i18n="blog.post5Title">What to Do in a Dental Emergency</h3>
-              <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.6;margin-bottom:1rem;" data-i18n="blog.post5Excerpt">Quick-action tips for common dental emergencies that could save your tooth and reduce pain before you reach the dentist.</p>
-              <a href="blog-post.html" style="color:#4FC3F7;font-size:0.9rem;font-weight:500;text-decoration:none;" data-i18n="blog.readMore">Read More &rarr;</a>
-            </div>
-          </article>
+          <a href="blog-post.html" class="blog-card" style="background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); text-decoration: none; display: block; transition: var(--transition-base);">
+            <div style="height: 200px; background: linear-gradient(135deg, #2d2d44, #16213e); display: flex; align-items: center; justify-content: center;"><span style="color: var(--color-text-dim); font-size: var(--font-size-sm);">Article Image</span></div>
+            <div style="padding: var(--space-6);"><span style="color: var(--color-primary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider);" data-i18n="blogPage.cat5">Prevention</span><h3 style="color: var(--color-text); font-size: var(--font-size-lg); margin: var(--space-2) 0 var(--space-3);" data-i18n="blogPage.post5Title">5 Daily Habits for Better Oral Health</h3><p style="color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-relaxed);" data-i18n="blogPage.post5Excerpt">Simple daily routines that can dramatically improve your dental health and prevent costly treatments.</p><div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border);"><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post5Date">Nov 28, 2023</span><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post5Read">3 min read</span></div></div>
+          </a>
 
-          <article class="blog-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;overflow:hidden;">
-            <div class="blog-card__image" style="aspect-ratio:16/9;background:linear-gradient(135deg,#1a2332,#0d1520);"></div>
-            <div class="blog-card__content" style="padding:1.5rem;">
-              <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.75rem;">
-                <span style="background:rgba(79,195,247,0.1);color:#4FC3F7;padding:0.2rem 0.6rem;border-radius:2rem;font-size:0.75rem;" data-i18n="blog.cat6">Veneers</span>
-                <span style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Jun 5, 2024</span>
-              </div>
-              <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:0.5rem;" data-i18n="blog.post6Title">The Complete Guide to Porcelain Veneers</h3>
-              <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;line-height:1.6;margin-bottom:1rem;" data-i18n="blog.post6Excerpt">Everything you need to know about porcelain veneers: from candidacy and procedure to aftercare and longevity.</p>
-              <a href="blog-post.html" style="color:#4FC3F7;font-size:0.9rem;font-weight:500;text-decoration:none;" data-i18n="blog.readMore">Read More &rarr;</a>
-            </div>
-          </article>
+          <a href="blog-post.html" class="blog-card" style="background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); text-decoration: none; display: block; transition: var(--transition-base);">
+            <div style="height: 200px; background: linear-gradient(135deg, #16213e, #2d2d44); display: flex; align-items: center; justify-content: center;"><span style="color: var(--color-text-dim); font-size: var(--font-size-sm);">Article Image</span></div>
+            <div style="padding: var(--space-6);"><span style="color: var(--color-primary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wider);" data-i18n="blogPage.cat6">Technology</span><h3 style="color: var(--color-text); font-size: var(--font-size-lg); margin: var(--space-2) 0 var(--space-3);" data-i18n="blogPage.post6Title">Digital Dentistry: How Technology Is Changing Your Treatment</h3><p style="color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-relaxed);" data-i18n="blogPage.post6Excerpt">From 3D scanning to CAD/CAM crowns — how modern technology makes dental treatment faster and more precise.</p><div style="display: flex; justify-content: space-between; align-items: center; margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border);"><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post6Date">Nov 15, 2023</span><span style="color: var(--color-text-dim); font-size: var(--font-size-xs);" data-i18n="blogPage.post6Read">6 min read</span></div></div>
+          </a>
 
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="cta-section__bg"><div class="cta-section__glow"></div></div>
-      <div class="container cta-section__content">
-        <h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2>
-        <p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today.</p>
-        <div class="cta-section__actions">
-          <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a>
-          <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">Call Us Now</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <canvas class="footer__particles-canvas" id="footerCanvas"></canvas>
-    <div class="container footer__inner">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div>
-          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry.</p>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.services">Services</h4>
-          <div class="footer__links">
-            <a href="service-implantology.html" class="footer__link">Implantology</a>
-            <a href="service-whitening.html" class="footer__link">Whitening</a>
-            <a href="service-veneers.html" class="footer__link">Veneers</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4>
-          <div class="footer__links">
-            <a href="gallery.html" class="footer__link">Before &amp; After</a>
-            <a href="team.html" class="footer__link">Team</a>
-            <a href="booking.html" class="footer__link">Book</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4>
-          <div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span>
-        <div class="footer__bottom-links"><a href="#">Privacy Policy</a></div>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"><canvas class="footer__particles-canvas" id="footerCanvas"></canvas><div class="container footer__inner"><div class="footer__grid"><div class="footer__brand"><div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div><p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry. Modern technology, personalized care, exceptional results.</p><div class="footer__social"><a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" class="footer__social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a></div></div><div><h4 class="footer__col-title" data-i18n="footer.services">Services</h4><div class="footer__links"><a href="service-implantology.html" class="footer__link" data-i18n="services.implant.title">Implantology</a><a href="service-whitening.html" class="footer__link" data-i18n="services.whitening.title">Whitening</a><a href="service-veneers.html" class="footer__link" data-i18n="services.veneers.title">Veneers</a><a href="service-pediatric.html" class="footer__link" data-i18n="services.pediatric.title">Pediatric Dentistry</a><a href="service-emergency.html" class="footer__link" data-i18n="services.emergency.title">Emergency Care</a></div></div><div><h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4><div class="footer__links"><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">Before &amp; After</a><a href="testimonials.html" class="footer__link" data-i18n="nav.reviews">Reviews</a><a href="team.html" class="footer__link" data-i18n="trust.viewTeam">Meet the Team</a><a href="blog.html" class="footer__link" data-i18n="nav.blog">Blog</a><a href="booking.html" class="footer__link" data-i18n="nav.book">Book Appointment</a></div></div><div><h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer.address">Kyiv, Ukraine</span></div><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@mirzoyev.dental">info@mirzoyev.dental</a></div></div></div><div class="footer__bottom"><span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic. All rights reserved.</span><div class="footer__bottom-links"><a href="#" data-i18n="footer.privacy">Privacy Policy</a><a href="#" data-i18n="footer.terms">Terms of Service</a></div></div></div></footer>
 
-  <div class="mobile-cta-bar" id="mobileCta">
-    <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a>
-  </div>
+  <div class="mobile-cta-bar" id="mobileCta"><a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a><a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm" data-i18n="cta.call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call</a></div>
 
   <script type="module" src="/src/js/main.js"></script>
 </body>

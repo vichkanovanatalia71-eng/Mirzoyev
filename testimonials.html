@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patient Reviews — Dr. Mirzoyev Dental Clinic</title>
-  <meta name="description" content="Read what our patients say about their experience at Dr. Mirzoyev Dental Clinic.">
+  <meta name="description" content="Read reviews from our satisfied patients. Real testimonials about dental implants, veneers, whitening, and more.">
+  <meta name="theme-color" content="#06090F">
+  <meta property="og:title" content="Patient Reviews — Dr. Mirzoyev Dental Clinic">
+  <meta property="og:description" content="Real stories from real patients who transformed their smiles with us.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,203 +19,69 @@
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="custom-cursor" id="customCursor"></div>
 
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="/" class="header__logo">
-        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
-        <span class="header__logo-text">Dr. <span>Mirzoyev</span></span>
-      </a>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li>
-          <li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
-          <li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li>
-          <li><a href="testimonials.html" class="nav__link nav__link--active" data-i18n="nav.reviews">Reviews</a></li>
-          <li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
-          <li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li>
-        </ul>
-      </nav>
-      <div class="header__actions">
-        <div class="lang-switcher" id="langSwitcher">
-          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
-          <button class="lang-switcher__btn" data-lang="ua">UA</button>
-        </div>
-        <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-      </div>
-      <button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="header__logo-text" data-i18n="logo">Dr. <span>Mirzoyev</span></span></a><nav class="header__nav"><ul class="nav__list"><li><a href="services.html" class="nav__link" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li><li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="nav__link nav__link--active" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li></ul></nav><div class="header__actions"><div class="lang-switcher" id="langSwitcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a></div><button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
 
-  <div class="mobile-nav" id="mobileNav">
-    <ul class="mobile-nav__list">
-      <li><a href="/#services" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
-      <li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
-      <li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li>
-      <li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li>
-      <li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li>
-      <li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li>
-    </ul>
-    <div class="lang-switcher" id="langSwitcherMobile">
-      <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
-      <button class="lang-switcher__btn" data-lang="ua">UA</button>
-    </div>
-    <a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a>
-  </div>
+  <div class="mobile-nav" id="mobileNav"><ul class="mobile-nav__list"><li><a href="services.html" class="mobile-nav__link" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li><li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li></ul><div class="lang-switcher" id="langSwitcherMobile"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a></div>
 
   <main>
     <section class="service-page__hero">
       <div class="container">
-        <span class="section-label" data-i18n="testimonials.label">Testimonials</span>
-        <h1 class="section-title" data-i18n="testimonials.title">Patient Reviews</h1>
-        <p class="section-subtitle mx-auto" data-i18n="testimonials.subtitle">Hear from our patients about their experience and the results they achieved at our clinic.</p>
+        <span class="section-label" data-i18n="testimonialsPage.label">Testimonials</span>
+        <h1 class="section-title" data-i18n="testimonialsPage.title">What Our Patients Say</h1>
+        <p class="section-subtitle mx-auto" data-i18n="testimonialsPage.subtitle">Real stories from real patients who transformed their smiles with us.</p>
       </div>
     </section>
 
-    <section class="testimonials-section">
+    <section style="padding: var(--space-section) 0;">
       <div class="container">
-        <div class="testimonials-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;">
+        <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: var(--space-6);">
 
-          <div class="testimonial-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;">
-            <div class="testimonial-card__stars" style="color:#4FC3F7;margin-bottom:1rem;font-size:1.25rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote class="testimonial-card__quote" style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;">
-              <p data-i18n="testimonials.review1">"Dr. Mirzoyev transformed my smile with dental implants. The whole process was smooth, painless, and the results exceeded my expectations. I can eat and smile with full confidence now!"</p>
-            </blockquote>
-            <div class="testimonial-card__author" style="display:flex;align-items:center;gap:1rem;">
-              <div class="testimonial-card__avatar" style="width:48px;height:48px;border-radius:50%;background:#4FC3F7;display:flex;align-items:center;justify-content:center;color:#06090F;font-weight:700;font-size:1.1rem;">O</div>
-              <div>
-                <div class="testimonial-card__name" style="color:#fff;font-weight:600;" data-i18n="testimonials.author1">Olena Shevchenko</div>
-                <span class="testimonial-card__service" style="color:#4FC3F7;font-size:0.8rem;" data-i18n="testimonials.service1">Dental Implants</span>
-              </div>
-            </div>
+          <div class="testimonial-card" style="position: static; transform: none; opacity: 1;">
+            <div class="testimonial-card__stars"><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <p class="testimonial-card__text" data-i18n="testimonials.review1">I was nervous about getting implants, but Dr. Mirzoyev and his team made the entire process smooth and painless. The results exceeded my expectations!</p>
+            <div class="testimonial-card__author"><div class="testimonial-card__avatar">A</div><div><div class="testimonial-card__name" data-i18n="testimonials.name1">Anna K.</div><div class="testimonial-card__service" data-i18n="testimonials.service1">Dental Implants</div></div></div>
           </div>
 
-          <div class="testimonial-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;">
-            <div class="testimonial-card__stars" style="color:#4FC3F7;margin-bottom:1rem;font-size:1.25rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote class="testimonial-card__quote" style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;">
-              <p data-i18n="testimonials.review2">"I was always self-conscious about my teeth until I got porcelain veneers here. The team was incredibly professional and attentive. My new smile looks completely natural and I could not be happier!"</p>
-            </blockquote>
-            <div class="testimonial-card__author" style="display:flex;align-items:center;gap:1rem;">
-              <div class="testimonial-card__avatar" style="width:48px;height:48px;border-radius:50%;background:#4FC3F7;display:flex;align-items:center;justify-content:center;color:#06090F;font-weight:700;font-size:1.1rem;">A</div>
-              <div>
-                <div class="testimonial-card__name" style="color:#fff;font-weight:600;" data-i18n="testimonials.author2">Andriy Kovalenko</div>
-                <span class="testimonial-card__service" style="color:#4FC3F7;font-size:0.8rem;" data-i18n="testimonials.service2">Porcelain Veneers</span>
-              </div>
-            </div>
+          <div class="testimonial-card" style="position: static; transform: none; opacity: 1;">
+            <div class="testimonial-card__stars"><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <p class="testimonial-card__text" data-i18n="testimonials.review2">The veneer transformation was incredible. I finally have the smile I've always dreamed of. Professional, caring, and truly skilled team.</p>
+            <div class="testimonial-card__author"><div class="testimonial-card__avatar">M</div><div><div class="testimonial-card__name" data-i18n="testimonials.name2">Maria T.</div><div class="testimonial-card__service" data-i18n="testimonials.service2">Porcelain Veneers</div></div></div>
           </div>
 
-          <div class="testimonial-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;">
-            <div class="testimonial-card__stars" style="color:#4FC3F7;margin-bottom:1rem;font-size:1.25rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote class="testimonial-card__quote" style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;">
-              <p data-i18n="testimonials.review3">"The teeth whitening results were amazing! My teeth are several shades brighter and the procedure was completely comfortable. The staff made me feel at ease the entire time."</p>
-            </blockquote>
-            <div class="testimonial-card__author" style="display:flex;align-items:center;gap:1rem;">
-              <div class="testimonial-card__avatar" style="width:48px;height:48px;border-radius:50%;background:#4FC3F7;display:flex;align-items:center;justify-content:center;color:#06090F;font-weight:700;font-size:1.1rem;">M</div>
-              <div>
-                <div class="testimonial-card__name" style="color:#fff;font-weight:600;" data-i18n="testimonials.author3">Maria Bondarenko</div>
-                <span class="testimonial-card__service" style="color:#4FC3F7;font-size:0.8rem;" data-i18n="testimonials.service3">Teeth Whitening</span>
-              </div>
-            </div>
+          <div class="testimonial-card" style="position: static; transform: none; opacity: 1;">
+            <div class="testimonial-card__stars"><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <p class="testimonial-card__text" data-i18n="testimonials.review3">My daughter used to be terrified of dentists. Dr. Mirzoyev's team changed that completely. They are patient, gentle, and incredibly professional.</p>
+            <div class="testimonial-card__author"><div class="testimonial-card__avatar">O</div><div><div class="testimonial-card__name" data-i18n="testimonials.name3">Olena S.</div><div class="testimonial-card__service" data-i18n="testimonials.service3">Pediatric Dentistry</div></div></div>
           </div>
 
-          <div class="testimonial-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;">
-            <div class="testimonial-card__stars" style="color:#4FC3F7;margin-bottom:1rem;font-size:1.25rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote class="testimonial-card__quote" style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;">
-              <p data-i18n="testimonials.review4">"My daughter used to be terrified of the dentist, but Dr. Bondarenko changed everything. The pediatric team is wonderful with children. Now my daughter actually looks forward to her dental visits!"</p>
-            </blockquote>
-            <div class="testimonial-card__author" style="display:flex;align-items:center;gap:1rem;">
-              <div class="testimonial-card__avatar" style="width:48px;height:48px;border-radius:50%;background:#4FC3F7;display:flex;align-items:center;justify-content:center;color:#06090F;font-weight:700;font-size:1.1rem;">I</div>
-              <div>
-                <div class="testimonial-card__name" style="color:#fff;font-weight:600;" data-i18n="testimonials.author4">Iryna Lysenko</div>
-                <span class="testimonial-card__service" style="color:#4FC3F7;font-size:0.8rem;" data-i18n="testimonials.service4">Pediatric Dentistry</span>
-              </div>
-            </div>
+          <div class="testimonial-card" style="position: static; transform: none; opacity: 1;">
+            <div class="testimonial-card__stars"><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <p class="testimonial-card__text" data-i18n="testimonialsPage.review4">After years of hiding my smile, the whitening treatment gave me back my confidence. The whole process was quick and the results were amazing.</p>
+            <div class="testimonial-card__author"><div class="testimonial-card__avatar">D</div><div><div class="testimonial-card__name" data-i18n="testimonialsPage.name4">Dmytro P.</div><div class="testimonial-card__service" data-i18n="testimonialsPage.service4">Teeth Whitening</div></div></div>
           </div>
 
-          <div class="testimonial-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;">
-            <div class="testimonial-card__stars" style="color:#4FC3F7;margin-bottom:1rem;font-size:1.25rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote class="testimonial-card__quote" style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;">
-              <p data-i18n="testimonials.review5">"I had a dental emergency on a weekend and they fit me in the same day. The pain was relieved immediately and the follow-up care was thorough. I am so grateful for this clinic and their dedication."</p>
-            </blockquote>
-            <div class="testimonial-card__author" style="display:flex;align-items:center;gap:1rem;">
-              <div class="testimonial-card__avatar" style="width:48px;height:48px;border-radius:50%;background:#4FC3F7;display:flex;align-items:center;justify-content:center;color:#06090F;font-weight:700;font-size:1.1rem;">D</div>
-              <div>
-                <div class="testimonial-card__name" style="color:#fff;font-weight:600;" data-i18n="testimonials.author5">Dmytro Melnyk</div>
-                <span class="testimonial-card__service" style="color:#4FC3F7;font-size:0.8rem;" data-i18n="testimonials.service5">Emergency Care</span>
-              </div>
-            </div>
+          <div class="testimonial-card" style="position: static; transform: none; opacity: 1;">
+            <div class="testimonial-card__stars"><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <p class="testimonial-card__text" data-i18n="testimonialsPage.review5">I had an emergency toothache on a Saturday and they saw me within an hour. The pain was resolved immediately. Truly grateful for their dedication.</p>
+            <div class="testimonial-card__author"><div class="testimonial-card__avatar">V</div><div><div class="testimonial-card__name" data-i18n="testimonialsPage.name5">Viktor M.</div><div class="testimonial-card__service" data-i18n="testimonialsPage.service5">Emergency Care</div></div></div>
           </div>
 
-          <div class="testimonial-card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;">
-            <div class="testimonial-card__stars" style="color:#4FC3F7;margin-bottom:1rem;font-size:1.25rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote class="testimonial-card__quote" style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;">
-              <p data-i18n="testimonials.review6">"After years of hiding my smile, I finally got the full smile makeover I dreamed of. The combination of veneers and whitening gave me a completely new look. The clinic is modern, clean, and the staff is world-class."</p>
-            </blockquote>
-            <div class="testimonial-card__author" style="display:flex;align-items:center;gap:1rem;">
-              <div class="testimonial-card__avatar" style="width:48px;height:48px;border-radius:50%;background:#4FC3F7;display:flex;align-items:center;justify-content:center;color:#06090F;font-weight:700;font-size:1.1rem;">T</div>
-              <div>
-                <div class="testimonial-card__name" style="color:#fff;font-weight:600;" data-i18n="testimonials.author6">Tetiana Prokopenko</div>
-                <span class="testimonial-card__service" style="color:#4FC3F7;font-size:0.8rem;" data-i18n="testimonials.service6">Smile Makeover</span>
-              </div>
-            </div>
+          <div class="testimonial-card" style="position: static; transform: none; opacity: 1;">
+            <div class="testimonial-card__stars"><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <p class="testimonial-card__text" data-i18n="testimonialsPage.review6">The All-on-4 procedure changed my life. I went from being embarrassed about my teeth to smiling with total confidence. Worth every penny.</p>
+            <div class="testimonial-card__author"><div class="testimonial-card__avatar">I</div><div><div class="testimonial-card__name" data-i18n="testimonialsPage.name6">Iryna B.</div><div class="testimonial-card__service" data-i18n="testimonialsPage.service6">All-on-4 Implants</div></div></div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="cta-section__bg"><div class="cta-section__glow"></div></div>
-      <div class="container cta-section__content">
-        <h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2>
-        <p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today.</p>
-        <div class="cta-section__actions">
-          <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a>
-          <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">Call Us Now</a>
-        </div>
-      </div>
-    </section>
+    <section class="cta-section"><div class="cta-section__bg"><div class="cta-section__glow"></div></div><div class="container cta-section__content"><span class="section-label" data-i18n="cta.label">Get Started</span><h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2><p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today. We'll create a personalized treatment plan just for you.</p><div class="cta-section__actions"><a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a><a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">Call Us Now</a></div></div></section>
   </main>
 
-  <footer class="footer">
-    <canvas class="footer__particles-canvas" id="footerCanvas"></canvas>
-    <div class="container footer__inner">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div>
-          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry.</p>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.services">Services</h4>
-          <div class="footer__links">
-            <a href="service-implantology.html" class="footer__link">Implantology</a>
-            <a href="service-whitening.html" class="footer__link">Whitening</a>
-            <a href="service-veneers.html" class="footer__link">Veneers</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4>
-          <div class="footer__links">
-            <a href="gallery.html" class="footer__link">Before &amp; After</a>
-            <a href="team.html" class="footer__link">Team</a>
-            <a href="booking.html" class="footer__link">Book</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4>
-          <div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span>
-        <div class="footer__bottom-links"><a href="#">Privacy Policy</a></div>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"><canvas class="footer__particles-canvas" id="footerCanvas"></canvas><div class="container footer__inner"><div class="footer__grid"><div class="footer__brand"><div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div><p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry. Modern technology, personalized care, exceptional results.</p><div class="footer__social"><a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" class="footer__social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a></div></div><div><h4 class="footer__col-title" data-i18n="footer.services">Services</h4><div class="footer__links"><a href="service-implantology.html" class="footer__link" data-i18n="services.implant.title">Implantology</a><a href="service-whitening.html" class="footer__link" data-i18n="services.whitening.title">Whitening</a><a href="service-veneers.html" class="footer__link" data-i18n="services.veneers.title">Veneers</a><a href="service-pediatric.html" class="footer__link" data-i18n="services.pediatric.title">Pediatric Dentistry</a><a href="service-emergency.html" class="footer__link" data-i18n="services.emergency.title">Emergency Care</a></div></div><div><h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4><div class="footer__links"><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">Before &amp; After</a><a href="testimonials.html" class="footer__link" data-i18n="nav.reviews">Reviews</a><a href="team.html" class="footer__link" data-i18n="trust.viewTeam">Meet the Team</a><a href="blog.html" class="footer__link" data-i18n="nav.blog">Blog</a><a href="booking.html" class="footer__link" data-i18n="nav.book">Book Appointment</a></div></div><div><h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer.address">Kyiv, Ukraine</span></div><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@mirzoyev.dental">info@mirzoyev.dental</a></div></div></div><div class="footer__bottom"><span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic. All rights reserved.</span><div class="footer__bottom-links"><a href="#" data-i18n="footer.privacy">Privacy Policy</a><a href="#" data-i18n="footer.terms">Terms of Service</a></div></div></div></footer>
 
-  <div class="mobile-cta-bar" id="mobileCta">
-    <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a>
-  </div>
+  <div class="mobile-cta-bar" id="mobileCta"><a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a><a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm" data-i18n="cta.call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call</a></div>
 
   <script type="module" src="/src/js/main.js"></script>
 </body>

@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emergency Dental Care — Dr. Mirzoyev Dental Clinic</title>
-  <meta name="description" content="Urgent dental treatment when you need it most. Same-day appointments available at Dr. Mirzoyev Dental Clinic.">
+  <meta name="description" content="Urgent dental treatment when you need it most. Same-day emergency appointments available at Dr. Mirzoyev Dental Clinic.">
+  <meta name="theme-color" content="#06090F">
+  <meta property="og:title" content="Emergency Dental Care — Dr. Mirzoyev Dental Clinic">
+  <meta property="og:description" content="Urgent dental treatment when you need it most. Same-day appointments available.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,55 +19,21 @@
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="custom-cursor" id="customCursor"></div>
 
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="/" class="header__logo">
-        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg>
-        <span class="header__logo-text">Dr. <span>Mirzoyev</span></span>
-      </a>
-      <nav class="header__nav">
-        <ul class="nav__list">
-          <li><a href="/#services" class="nav__link" data-i18n="nav.services">Services</a></li>
-          <li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
-          <li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li>
-          <li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li>
-          <li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
-          <li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li>
-        </ul>
-      </nav>
-      <div class="header__actions">
-        <div class="lang-switcher" id="langSwitcher">
-          <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
-          <button class="lang-switcher__btn" data-lang="ua">UA</button>
-        </div>
-        <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-      </div>
-      <button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo"><svg class="header__logo-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="header__logo-text" data-i18n="logo">Dr. <span>Mirzoyev</span></span></a><nav class="header__nav"><ul class="nav__list"><li><a href="services.html" class="nav__link nav__link--active" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="nav__link" data-i18n="nav.gallery">Before &amp; After</a></li><li><a href="/#trust" class="nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="nav__link" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="nav__link" data-i18n="nav.contacts">Contacts</a></li></ul></nav><div class="header__actions"><div class="lang-switcher" id="langSwitcher"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a></div><button class="header__burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
 
-  <div class="mobile-nav" id="mobileNav">
-    <ul class="mobile-nav__list">
-      <li><a href="/#services" class="mobile-nav__link" data-i18n="nav.services">Services</a></li>
-      <li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li>
-      <li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li>
-      <li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li>
-      <li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li>
-      <li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li>
-    </ul>
-    <div class="lang-switcher" id="langSwitcherMobile">
-      <button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button>
-      <button class="lang-switcher__btn" data-lang="ua">UA</button>
-    </div>
-    <a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a>
-  </div>
+  <div class="mobile-nav" id="mobileNav"><ul class="mobile-nav__list"><li><a href="services.html" class="mobile-nav__link" data-i18n="nav.services">Services</a></li><li><a href="gallery.html" class="mobile-nav__link" data-i18n="nav.gallery">Before &amp; After</a></li><li><a href="/#trust" class="mobile-nav__link" data-i18n="nav.about">About</a></li><li><a href="testimonials.html" class="mobile-nav__link" data-i18n="nav.reviews">Reviews</a></li><li><a href="blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a></li><li><a href="contacts.html" class="mobile-nav__link" data-i18n="nav.contacts">Contacts</a></li></ul><div class="lang-switcher" id="langSwitcherMobile"><button class="lang-switcher__btn lang-switcher__btn--active" data-lang="en">EN</button><button class="lang-switcher__btn" data-lang="ua">UA</button></div><a href="booking.html" class="btn btn-primary btn-lg" data-i18n="nav.book">Book Appointment</a></div>
 
   <main>
     <section class="service-page__hero">
       <div class="container">
+        <div class="service-page__breadcrumb"><a href="services.html" data-i18n="nav.services">Services</a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg><span data-i18n="services.emergency.title">Emergency Care</span></div>
         <span class="section-label" data-i18n="serviceEmergency.label">Urgent Care</span>
         <h1 class="section-title" data-i18n="serviceEmergency.title">Emergency Dental Care</h1>
-        <p class="section-subtitle mx-auto" data-i18n="serviceEmergency.subtitle">Urgent dental treatment when you need it most. Same-day appointments available for toothaches, broken teeth, infections, and other dental emergencies.</p>
+        <p class="section-subtitle mx-auto" data-i18n="serviceEmergency.subtitle">Urgent dental treatment when you need it most. Same-day appointments available for pain relief, trauma, and dental emergencies.</p>
+        <div style="display: flex; gap: var(--space-4); margin-top: var(--space-8); flex-wrap: wrap; justify-content: center;">
+          <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="serviceEmergency.bookBtn">Book Emergency Visit</a>
+          <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call Us Now</a>
+        </div>
       </div>
     </section>
 
@@ -72,106 +42,56 @@
         <div class="service-detail__grid" style="display:grid;grid-template-columns:2fr 1fr;gap:3rem;align-items:start;">
           <div class="service-detail__main">
             <div class="service-detail__section">
-              <h2 data-i18n="serviceEmergency.whatTitle">What is Emergency Dental Care?</h2>
-              <p data-i18n="serviceEmergency.whatDesc">Emergency dental care addresses urgent oral health issues that require immediate attention, including severe toothaches, knocked-out teeth, broken or cracked teeth, lost fillings or crowns, abscesses, and jaw injuries. Our clinic prioritizes emergency patients with same-day appointments to provide rapid relief and prevent further complications.</p>
+              <h2 data-i18n="serviceEmergency.whatTitle">When Do You Need Emergency Dental Care?</h2>
+              <p data-i18n="serviceEmergency.whatDesc">Dental emergencies can happen at any time. Whether it's a severe toothache, a knocked-out tooth, a broken crown, or swelling, our emergency dental team is ready to provide immediate relief and treatment. Don't wait — prompt treatment can save your tooth and prevent complications.</p>
             </div>
 
             <div class="service-detail__section">
-              <h2 data-i18n="serviceEmergency.procedureTitle">The Procedure</h2>
+              <h2 data-i18n="serviceEmergency.procedureTitle">Common Emergency Situations</h2>
               <div class="service-steps">
-                <div class="service-step">
-                  <div class="service-step__number">1</div>
-                  <div class="service-step__content">
-                    <h3 data-i18n="serviceEmergency.step1Title">Immediate Assessment</h3>
-                    <p data-i18n="serviceEmergency.step1Desc">Rapid evaluation of your condition, including examination, X-rays if needed, and determination of the urgency and best course of action.</p>
-                  </div>
+                <div class="service-step"><div class="service-step__number">1</div><div class="service-step__content"><h3 data-i18n="serviceEmergency.step1Title">Severe Toothache</h3><p data-i18n="serviceEmergency.step1Desc">Intense, persistent tooth pain that may indicate infection or abscess. We provide rapid diagnosis and pain relief.</p></div></div>
+                <div class="service-step"><div class="service-step__number">2</div><div class="service-step__content"><h3 data-i18n="serviceEmergency.step2Title">Knocked-Out Tooth</h3><p data-i18n="serviceEmergency.step2Desc">Time is critical — a knocked-out tooth can often be re-implanted if treated within 30-60 minutes. Keep the tooth moist and come in immediately.</p></div></div>
+                <div class="service-step"><div class="service-step__number">3</div><div class="service-step__content"><h3 data-i18n="serviceEmergency.step3Title">Broken or Cracked Tooth</h3><p data-i18n="serviceEmergency.step3Desc">Fractures from trauma or biting hard objects. We assess the damage and provide restoration options from bonding to crowns.</p></div></div>
+                <div class="service-step"><div class="service-step__number">4</div><div class="service-step__content"><h3 data-i18n="serviceEmergency.step4Title">Lost Filling or Crown</h3><p data-i18n="serviceEmergency.step4Desc">Exposed tooth structure needs prompt attention to prevent further damage or sensitivity. We can replace or repair restorations same day.</p></div></div>
+              </div>
+            </div>
+
+            <div class="service-detail__section">
+              <h2 data-i18n="serviceEmergency.durationTitle">Emergency Response</h2>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-4);">
+                <div style="background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid var(--color-border); text-align: center;">
+                  <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary);" data-i18n="serviceEmergency.responseTime">30m</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-2);" data-i18n="serviceEmergency.responseLabel">Response Time</div>
                 </div>
-                <div class="service-step">
-                  <div class="service-step__number">2</div>
-                  <div class="service-step__content">
-                    <h3 data-i18n="serviceEmergency.step2Title">Pain Relief</h3>
-                    <p data-i18n="serviceEmergency.step2Desc">Immediate pain management through local anesthesia, medication, or other appropriate measures to provide fast relief.</p>
-                  </div>
+                <div style="background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid var(--color-border); text-align: center;">
+                  <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary);" data-i18n="serviceEmergency.availValue">7</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-2);" data-i18n="serviceEmergency.availLabel">Days a Week</div>
                 </div>
-                <div class="service-step">
-                  <div class="service-step__number">3</div>
-                  <div class="service-step__content">
-                    <h3 data-i18n="serviceEmergency.step3Title">Treatment</h3>
-                    <p data-i18n="serviceEmergency.step3Desc">Appropriate emergency treatment is provided, which may include tooth repair, extraction, drainage of infection, or temporary restoration.</p>
-                  </div>
-                </div>
-                <div class="service-step">
-                  <div class="service-step__number">4</div>
-                  <div class="service-step__content">
-                    <h3 data-i18n="serviceEmergency.step4Title">Follow-up Plan</h3>
-                    <p data-i18n="serviceEmergency.step4Desc">Comprehensive follow-up plan including medications, home care instructions, and scheduling any additional treatments needed for complete recovery.</p>
-                  </div>
+                <div style="background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-6); border: 1px solid var(--color-border); text-align: center;">
+                  <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: var(--color-primary);" data-i18n="serviceEmergency.sameDayValue">Same</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin-top: var(--space-2);" data-i18n="serviceEmergency.sameDayLabel">Day Treatment</div>
                 </div>
               </div>
             </div>
 
             <div class="service-detail__section">
-              <h2 data-i18n="serviceEmergency.benefitsTitle">Benefits</h2>
-              <ul class="service-benefits">
-                <li data-i18n="serviceEmergency.benefit1">Same-day emergency appointments available</li>
-                <li data-i18n="serviceEmergency.benefit2">Rapid pain relief and stabilization</li>
-                <li data-i18n="serviceEmergency.benefit3">Experienced emergency dental team</li>
-                <li data-i18n="serviceEmergency.benefit4">Modern diagnostic and treatment equipment</li>
-                <li data-i18n="serviceEmergency.benefit5">Comprehensive follow-up care included</li>
-                <li data-i18n="serviceEmergency.benefit6">Prevention of further complications</li>
-              </ul>
-            </div>
-
-            <div class="service-detail__section">
               <h2 data-i18n="serviceEmergency.faqTitle">Frequently Asked Questions</h2>
               <div class="faq-accordion">
-                <div class="faq-item">
-                  <button class="faq-item__question" aria-expanded="false">
-                    <span data-i18n="serviceEmergency.faq1Q">What counts as a dental emergency?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                  </button>
-                  <div class="faq-item__answer">
-                    <p data-i18n="serviceEmergency.faq1A">Dental emergencies include severe toothache, knocked-out or loose teeth, broken or cracked teeth, lost fillings or crowns, abscesses or swelling, bleeding that will not stop, and jaw injuries. If you are unsure, call us and we will advise you.</p>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <button class="faq-item__question" aria-expanded="false">
-                    <span data-i18n="serviceEmergency.faq2Q">What should I do if a tooth gets knocked out?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                  </button>
-                  <div class="faq-item__answer">
-                    <p data-i18n="serviceEmergency.faq2A">Handle the tooth by the crown (not the root), gently rinse it if dirty, and try to place it back in the socket. If that is not possible, keep it in milk or saliva and get to our clinic within 30 minutes for the best chance of saving the tooth.</p>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <button class="faq-item__question" aria-expanded="false">
-                    <span data-i18n="serviceEmergency.faq3Q">How quickly can I be seen for an emergency?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                  </button>
-                  <div class="faq-item__answer">
-                    <p data-i18n="serviceEmergency.faq3A">We prioritize emergency cases and strive to see patients on the same day they call. In many cases, we can accommodate you within hours. Call our emergency line immediately for the fastest response.</p>
-                  </div>
-                </div>
+                <div class="faq-item"><button class="faq-item__question" aria-expanded="false"><span data-i18n="serviceEmergency.faq1Q">What should I do if a tooth gets knocked out?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-item__answer"><p data-i18n="serviceEmergency.faq1A">Pick up the tooth by the crown (not the root), gently rinse if dirty, and try to place it back in the socket. If that's not possible, keep it in milk or saliva and come to our clinic immediately. Time is critical — the best outcomes are within 30 minutes.</p></div></div>
+                <div class="faq-item"><button class="faq-item__question" aria-expanded="false"><span data-i18n="serviceEmergency.faq2Q">Do you offer after-hours emergency care?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-item__answer"><p data-i18n="serviceEmergency.faq2A">Yes, we have an emergency hotline available outside regular hours. Call our main number and follow the prompts for emergency care. A dentist will return your call within 30 minutes to assess your situation.</p></div></div>
+                <div class="faq-item"><button class="faq-item__question" aria-expanded="false"><span data-i18n="serviceEmergency.faq3Q">How much does emergency dental care cost?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-item__answer"><p data-i18n="serviceEmergency.faq3A">Emergency consultation fees start from $100. The total cost depends on the treatment needed. We provide a clear cost estimate before proceeding with any treatment, and payment plans are available.</p></div></div>
               </div>
             </div>
           </div>
 
           <aside class="service-detail__sidebar">
             <div class="service-sidebar-card">
-              <div class="service-sidebar-card__price">
-                <span class="service-sidebar-card__price-label" data-i18n="serviceEmergency.priceLabel">Price</span>
-                <span class="service-sidebar-card__price-value" data-i18n="serviceEmergency.price">Varies</span>
-              </div>
+              <div class="service-sidebar-card__price"><span class="service-sidebar-card__price-label" data-i18n="serviceEmergency.priceLabel">Starting from</span><span class="service-sidebar-card__price-value" data-i18n="serviceEmergency.price">$100</span></div>
               <div class="service-sidebar-card__info">
-                <div class="service-sidebar-card__info-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  <div>
-                    <span class="service-sidebar-card__info-label" data-i18n="serviceEmergency.durationLabel">Availability</span>
-                    <span class="service-sidebar-card__info-value" data-i18n="serviceEmergency.duration">Same-day</span>
-                  </div>
-                </div>
+                <div class="service-sidebar-card__info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><span class="service-sidebar-card__info-label" data-i18n="serviceEmergency.responseLabel2">Response</span><span class="service-sidebar-card__info-value" data-i18n="serviceEmergency.responseValue">Within 30 min</span></div></div>
               </div>
-              <a href="booking.html" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="serviceEmergency.bookBtn">Get Emergency Help</a>
+              <a href="booking.html" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="serviceEmergency.bookBtn">Book Emergency Visit</a>
+              <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" style="width:100%;margin-top:0.75rem;" data-i18n="serviceEmergency.callBtn">Call Emergency Line</a>
             </div>
           </aside>
         </div>
@@ -181,8 +101,9 @@
     <section class="cta-section">
       <div class="cta-section__bg"><div class="cta-section__glow"></div></div>
       <div class="container cta-section__content">
-        <h2 class="cta-section__title" data-i18n="cta.title">Ready to Transform Your Smile?</h2>
-        <p class="cta-section__desc" data-i18n="cta.desc">Book your free consultation today.</p>
+        <span class="section-label" data-i18n="cta.label">Get Started</span>
+        <h2 class="cta-section__title" data-i18n="serviceEmergency.ctaTitle">Dental Emergency? We're Here to Help</h2>
+        <p class="cta-section__desc" data-i18n="serviceEmergency.ctaDesc">Don't wait when you're in pain. Call us now or book an emergency appointment online.</p>
         <div class="cta-section__actions">
           <a href="booking.html" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.book">Book Free Consultation</a>
           <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-lg" data-i18n="cta.call">Call Us Now</a>
@@ -191,46 +112,9 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <canvas class="footer__particles-canvas" id="footerCanvas"></canvas>
-    <div class="container footer__inner">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div>
-          <p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry.</p>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.services">Services</h4>
-          <div class="footer__links">
-            <a href="service-implantology.html" class="footer__link">Implantology</a>
-            <a href="service-whitening.html" class="footer__link">Whitening</a>
-            <a href="service-veneers.html" class="footer__link">Veneers</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4>
-          <div class="footer__links">
-            <a href="gallery.html" class="footer__link">Before &amp; After</a>
-            <a href="team.html" class="footer__link">Team</a>
-            <a href="booking.html" class="footer__link">Book</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4>
-          <div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic.</span>
-        <div class="footer__bottom-links"><a href="#">Privacy Policy</a></div>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"><canvas class="footer__particles-canvas" id="footerCanvas"></canvas><div class="container footer__inner"><div class="footer__grid"><div class="footer__brand"><div class="footer__brand-logo"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M20 10c-2.5 0-4.5 1-5.5 3-1.5 3-1 7 0.5 11 1 2.5 2.5 5.5 5 6.5 2.5-1 4-4 5-6.5 1.5-4 2-8 0.5-11-1-2-3-3-5.5-3z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2"/></svg><span class="footer__brand-name">Dr. <span>Mirzoyev</span></span></div><p class="footer__brand-desc" data-i18n="footer.desc">Premium cosmetic and implant dentistry. Modern technology, personalized care, exceptional results.</p><div class="footer__social"><a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" class="footer__social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a></div></div><div><h4 class="footer__col-title" data-i18n="footer.services">Services</h4><div class="footer__links"><a href="service-implantology.html" class="footer__link" data-i18n="services.implant.title">Implantology</a><a href="service-whitening.html" class="footer__link" data-i18n="services.whitening.title">Whitening</a><a href="service-veneers.html" class="footer__link" data-i18n="services.veneers.title">Veneers</a><a href="service-pediatric.html" class="footer__link" data-i18n="services.pediatric.title">Pediatric Dentistry</a><a href="service-emergency.html" class="footer__link" data-i18n="services.emergency.title">Emergency Care</a></div></div><div><h4 class="footer__col-title" data-i18n="footer.quickLinks">Quick Links</h4><div class="footer__links"><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">Before &amp; After</a><a href="testimonials.html" class="footer__link" data-i18n="nav.reviews">Reviews</a><a href="team.html" class="footer__link" data-i18n="trust.viewTeam">Meet the Team</a><a href="blog.html" class="footer__link" data-i18n="nav.blog">Blog</a><a href="booking.html" class="footer__link" data-i18n="nav.book">Book Appointment</a></div></div><div><h4 class="footer__col-title" data-i18n="footer.contact">Contact</h4><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="footer.address">Kyiv, Ukraine</span></div><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a></div><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@mirzoyev.dental">info@mirzoyev.dental</a></div></div></div><div class="footer__bottom"><span data-i18n="footer.copy">&copy; 2024 Dr. Mirzoyev Dental Clinic. All rights reserved.</span><div class="footer__bottom-links"><a href="#" data-i18n="footer.privacy">Privacy Policy</a><a href="#" data-i18n="footer.terms">Terms of Service</a></div></div></div></footer>
 
-  <div class="mobile-cta-bar" id="mobileCta">
-    <a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a>
-    <a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm">Call</a>
-  </div>
+  <div class="mobile-cta-bar" id="mobileCta"><a href="booking.html" class="btn btn-primary btn-sm" data-i18n="nav.book">Book Appointment</a><a href="tel:+380XXXXXXXXX" class="btn btn-secondary btn-sm" data-i18n="cta.call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call</a></div>
 
   <script type="module" src="/src/js/main.js"></script>
 </body>
